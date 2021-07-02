@@ -105,7 +105,7 @@ if not exist "%CFG_BIN_DIR%\python.exe" (
             if %ERRORLEVEL% == 0 (
                 wget -O "%CFG_ROOT_DIR%\etc\thirdparty\virtualenv.pyz" %VIRTUALENV_PYZ_URL%
             ) else (
-                echo "Please download and install curl or wget."
+                echo "Could not find curl or wget, please install one."
                 exit /b
             )
         )
